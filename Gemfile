@@ -30,6 +30,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', '3.4.0'
@@ -40,6 +41,13 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring', '1.1.3'
   gem 'sqlite3', '1.3.9'
+
+end
   
+group :production do 
+  gem 'pg', '0.17.1'
+  gem 'rails_12factor', '0.0.2'
+
+
 end
 
